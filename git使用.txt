@@ -1,0 +1,12 @@
+1.安装软件，安装完成后自报家门：
+git config --global user.name "wangkai"
+git config --global user.email "1286275657@qq.com"
+
+2.创建仓库，转到想建立仓库的目录
+cd /C/Users/王凯/Desktop/PythonGui
+git init
+
+3.添加文件到仓库
+git add git使用.txt
+
+
