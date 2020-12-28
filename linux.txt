@@ -1,0 +1,13 @@
+linux 常用命令
+
+sudo -i
+dpkg -i 
+
+sudo apt-get --purge remove 包名
+sudo apt-get install google-chrome-unstable
+sudo dpkg -i <.deb file name>
+sudo chown -R wangkai /dev/input/mice
+
+首先刷新一下本地源：sudo apt-get update
+有必要升级一下当前的软件：sudo apt-get upgrade
+
