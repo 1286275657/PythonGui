@@ -57,6 +57,29 @@ git push origin master
 5.克隆
 git clone git@github.com:1286275657/PythonGui.git
 
+三.分支管理
+
+1.创建并转到dev分支
+git checkout -b dev
+相当于
+git branch dev
+git check out dev
+
+2.查看分支  *代表当前分支
+git branch
+
+3.提交当前分支
+git add git使用.txt
+
+4.git commit -m "第三次提交到git"
+
+5.回到master分支
+git checkout master
+
+6.删除dev
+git branch -d dev
+
+7.git branch
 
 
 
