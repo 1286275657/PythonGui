@@ -1,3 +1,4 @@
+一，本地仓库
 1.安装软件，安装完成后自报家门：
 git config --global user.name "wangkai"
 git config --global user.email "1286275657@qq.com"
@@ -8,5 +9,55 @@ git init
 
 3.添加文件到仓库
 git add git使用.txt
+git commit -m "把文件第一次传入git"
+
+4.退回文件
+git log
+git log --pretty=oneline
+
+git reset --hard HEAD^
+上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+
+5.查看
+cat git使用.txt
+
+6.返回后面版本
+git reset --hard 1094a
+版本号没必要写全，前几位就可以了
+
+7.关机后重启回到后面版本
+git reflog
+查看命令历史，以便确定要回到未来的哪个版本
+
+8.git status
+可以查看文件状态
+
+9.删除和还原
+删除
+git rm git使用.txt
+git commit -m "remove git使用.txt"
+
+还原
+git checkout -- git使用.txt
+
+二.github仓库
+
+1.先添加Key
+ssh-keygen -t rsa -C "1286275657@qq.com"
+
+2.关联仓库
+git remote add origin git@github.com:1286275657/PythonGui.git
+
+3.将本地仓库所有内容推送到远程仓库上
+git push -u origin master
+
+4.以后推送
+git push origin master
+
+5.克隆
+git clone git@github.com:1286275657/PythonGui.git
+
+
+
 
 
